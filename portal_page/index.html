@@ -1,81 +1,238 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jouvens Cyber Portal</title>
+    <meta name="description"
+        content="Jouvens Etienne's WDD 130 web development portal.">
+    <title>Home | Jouvens Cyber Portal</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Jouvens Cyber Portal</h1>
-</header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="#">WWR</a>
-    <a href="ice.html">ICE</a>
-    <a href="aboutme.html">About Me</a>
-</nav>
+<header>
+    <div class="header-main">
+        <img class="site-logo"
+            src="images/logo.png"
+            alt="Jouvens Cyber Portal logo">
+
+        <div class="title-box">
+            <h1>Jouvens Cyber Portal</h1>
+            <p>WDD 130 Web Development Portfolio</p>
+        </div>
+    </div>
+
+    <nav aria-label="Main navigation">
+        <div class="nav-links">
+            <a class="active"
+                aria-current="page"
+                href="index.html">
+                Home
+            </a>
+
+            <a href="wwr/index.html">WWR</a>
+            <a href="ice.html">ICE</a>
+            <a href="aboutme.html">About Me</a>
+        </div>
+    </nav>
+</header>
 
 <main>
 
-<section>
-    <h2>Welcome</h2>
-    <p>Welcome to my WDD130 portal page where I will showcase my projects and assignments.</p>
+    <section class="hero">
+        <div class="hero-text">
+            <p class="eyebrow">Welcome to my portfolio</p>
 
-    <img src="images/logo.png" alt="Cyber Logo" width="250">
-</section>
+            <h2>Building My Web Development Skills</h2>
 
-<section>
-    <h2>Projects</h2>
+            <p>
+                This portal contains the projects and assignments
+                I completed in WDD 130. These projects show my
+                progress with HTML, CSS, responsive design, forms,
+                tables, images, and page layouts.
+            </p>
 
-    <ul>
-        <li>White Water Rafting</li>
-        <li>ICE Challenges</li>
-        <li>Portal Website</li>
-    </ul>
-</section>
+            <div class="button-row">
+                <a class="button" href="ice.html">
+                    View My Projects
+                </a>
 
-<section>
-    <h2>Goals</h2>
+                <a class="button outline-button"
+                    href="aboutme.html">
+                    About Me
+                </a>
+            </div>
+        </div>
 
-    <table border="1">
-        <tr>
-            <th>Goal</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>Learn HTML</td>
-            <td>In Progress</td>
-        </tr>
-        <tr>
-            <td>Build Portfolio</td>
-            <td>Working On It</td>
-        </tr>
-    </table>
-</section>
+        <div class="hero-image">
+            <img src="images/logo.png"
+                alt="Jouvens Cyber Hub technology logo">
+        </div>
+    </section>
 
-<section>
-    <h2>Contact Me</h2>
+    <section class="intro-section">
+        <p class="eyebrow">Portal overview</p>
 
-    <form>
-        <label>Name:</label>
-        <input type="text">
+        <h2>Explore My Work</h2>
 
-        <label>Email:</label>
-        <input type="email">
+        <p>
+            Use this portal to view my White Water Rafting website,
+            ICE challenges, learning goals, and information about me.
+        </p>
+    </section>
 
-        <input type="submit" value="Send">
-    </form>
-</section>
+    <div class="home-grid">
+
+        <section class="card">
+            <h2>Featured Projects</h2>
+
+            <p>
+                These projects demonstrate some of the web
+                development concepts I practiced during this class.
+            </p>
+
+            <ul class="project-list">
+                <li>
+                    <a href="wwr/index.html">
+                        White Water Rafting Website
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ice.html">
+                        ICE Challenge Collection
+                    </a>
+                </li>
+
+                <li>
+                    <a href="aboutme.html">
+                        About Me Page
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Learning Goals</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Goal</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Write semantic HTML</td>
+                            <td>Completed</td>
+                        </tr>
+
+                        <tr>
+                            <td>Build CSS Grid layouts</td>
+                            <td>Completed</td>
+                        </tr>
+
+                        <tr>
+                            <td>Create responsive pages</td>
+                            <td>In Progress</td>
+                        </tr>
+
+                        <tr>
+                            <td>Build a professional portfolio</td>
+                            <td>In Progress</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+
+    <section class="contact-section">
+        <div class="contact-text">
+            <p class="eyebrow">Contact section</p>
+
+            <h2>Send a Message</h2>
+
+            <p>
+                This form demonstrates the form elements and styling
+                I practiced in WDD 130.
+            </p>
+        </div>
+
+        <form action="#" method="post">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Name</label>
+
+                    <input type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+
+                    <input type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+
+                <textarea id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Enter your message"
+                    required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
 </main>
 
 <footer>
-    <p>Email: youremail@email.com</p>
-    <p>© 2026 Jouvens Etienne</p>
+    <div class="footer-content">
+        <div>
+            <h2>Jouvens Cyber Portal</h2>
+            <p>WDD 130 Web Development Portfolio</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="mailto:eti25001@byui.edu">
+                Email
+            </a>
+
+            <a href="https://github.com/jouvens-cyber"
+                target="_blank"
+                rel="noopener">
+                GitHub
+            </a>
+        </div>
+    </div>
+
+    <p class="copyright">
+        &copy; 2026 Jouvens Etienne
+    </p>
 </footer>
+```
 
 </body>
+
 </html>
